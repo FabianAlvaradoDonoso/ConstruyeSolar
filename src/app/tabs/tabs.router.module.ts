@@ -12,7 +12,8 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: () =>
+              import('../tab1/tab1.module').then(m => m.Tab1PageModule)
           }
         ]
       },
@@ -21,7 +22,8 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../tab2/tab2.module#Tab2PageModule'
+            loadChildren: () =>
+              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
           }
         ]
       },
@@ -30,28 +32,67 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../tab3/tab3.module#Tab3PageModule'
+            loadChildren: () =>
+              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
           }
         ]
       },
       {
+          path: 'home',
+          children: [
+            {
+              path: '',
+              loadChildren: () =>
+                import('../home/home.module').then(m => m.HomePageModule)
+            }
+          ]
+      },
+      {
+          path: 'humedad',
+          children: [
+            {
+              path: '',
+              loadChildren: () =>
+                import('../humedad/humedad.module').then(m => m.HumedadPageModule)
+            }
+          ]
+      },
+      {
+          path: 'alertas',
+          children: [
+            {
+              path: '',
+              loadChildren: () =>
+                import('../alertas/alertas.module').then(m => m.AlertasPageModule)
+            }
+          ]
+      },
+      {
+          path: 'temperatura',
+          children: [
+            {
+              path: '',
+              loadChildren: () =>
+                import('../temperatura/temperatura.module').then(m => m.TemperaturaPageModule)
+            }
+          ]
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(routes)
-  ],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}

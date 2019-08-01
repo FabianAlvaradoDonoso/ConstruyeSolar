@@ -1,5 +1,7 @@
 {
   "name": "ConstruyeSolar",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
