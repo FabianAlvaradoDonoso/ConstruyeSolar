@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ConexionService {
 
-    private url = "http://convive60prueba1.duckdns.org";
+    private url = "http://diegosepurpi.duckdns.org/";
     private socket;
 
     constructor() {
