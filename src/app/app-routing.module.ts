@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'temperatura', loadChildren: './temperatura/temperatura.module#TemperaturaPageModule' },
   { path: 'humedad', loadChildren: './humedad/humedad.module#HumedadPageModule' },
-  { path: 'alertas', loadChildren: './alertas/alertas.module#AlertasPageModule' }
+  { path: 'alertas', loadChildren: './alertas/alertas.module#AlertasPageModule' },
+  { path: 'menu', loadChildren: './components/menu/menu.module#MenuPageModule' },
+  // { path: 'menu', loadChildren: './pages/menu/menu.module#MenuPageModule' }
 ];
 @NgModule({
   imports: [

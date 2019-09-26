@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConexionService } from '../conexion.service';
-import { ToastController } from '@ionic/angular';
+import { ToastController, MenuComponent } from '@ionic/angular';
 
 @Component({
     selector: 'app-home',
