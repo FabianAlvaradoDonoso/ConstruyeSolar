@@ -28,7 +28,8 @@ const routes: Routes = [
          path: 'gas',
          loadChildren: '../gas/gas.module#GasPageModule'
        },
-       { path: 'inicio',
+       {
+         path: 'inicio',
        loadChildren: '../inicio/inicio.module#InicioPageModule'
      },
     ]

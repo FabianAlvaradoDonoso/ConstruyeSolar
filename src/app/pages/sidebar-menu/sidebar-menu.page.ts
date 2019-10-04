@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
 export class SidebarMenuPage implements OnInit {
 
   pages = [
+    // {
+    //   title:'Inicio',
+    //   url: '/menu/inicio'
+    // },
     {
       title:'Contaminación',
       url: '/menu/contaminacion'
@@ -23,7 +27,7 @@ export class SidebarMenuPage implements OnInit {
       url: '/menu/humedad'
     },
     {
-      title:'temperatura',
+      title:'Temperatura',
       url: '/menu/temperatura'
     }
   ];

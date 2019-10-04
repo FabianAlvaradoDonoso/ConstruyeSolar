@@ -18,16 +18,6 @@ const routes: Routes = [
           ]
       },
       {
-          path: 'humedad',
-          children: [
-            {
-              path: '',
-              loadChildren: () =>
-                import('../humedad/humedad.module').then(m => m.HumedadPageModule)
-            }
-          ]
-      },
-      {
           path: 'alertas',
           children: [
             {
@@ -38,25 +28,15 @@ const routes: Routes = [
           ]
       },
       {
-          path: 'temperatura',
-          children: [
-            {
-              path: '',
-              loadChildren: () =>
-                import('../temperatura/temperatura.module').then(m => m.TemperaturaPageModule)
-            }
-          ]
-      },
-      {
         path: '',
-        redirectTo: '../pages/inicio',
+        redirectTo: '/menu/inicio',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '../pages/inicio',
+    redirectTo: '/menu/inicio',
     pathMatch: 'full'
   }
 ];
