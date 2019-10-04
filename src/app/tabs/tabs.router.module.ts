@@ -8,12 +8,12 @@ const routes: Routes = [
     component: TabsPage,
     children: [
           {
-          path: 'home',
+          path: '',
           children: [
             {
               path: '',
               loadChildren: () =>
-                import('../home/home.module').then(m => m.HomePageModule)
+                import('../pages/sidebar-menu/sidebar-menu.module').then(m => m.SidebarMenuPageModule)
             }
           ]
       },
@@ -49,14 +49,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: '../pages/inicio',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '../pages/inicio',
     pathMatch: 'full'
   }
 ];
