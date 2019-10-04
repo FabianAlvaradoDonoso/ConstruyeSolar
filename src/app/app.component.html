@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-menu side="start"
+            menuId="first"
+            contentId="principal">
+    <ion-header>
+      <ion-toolbar color="medium">
+        <ion-title>General</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Presión</ion-item>
+        <ion-item>Humedad</ion-item>
+        <ion-item>Temperatura</ion-item>
+        <ion-item>Contaminación</ion-item>
+        <ion-item>Gas</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+  <ion-router-outlet id="principal"></ion-router-outlet>
 </ion-app>
