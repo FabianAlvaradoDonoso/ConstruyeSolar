@@ -8,52 +8,40 @@
 </ion-header>
 
 
-
-<ion-content>
+<ion-content padding class="background">
   Estado: {{ estado }}
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-card class="welcome-card">
-          <img src="/assets/general.png" alt="" />
+        <ion-card class="color1">
           <ion-card-header>
-            <ion-card-subtitle>Temperatura</ion-card-subtitle>
-            <ion-card-title>General</ion-card-title>
+            <img class="temp" src="/assets/fire.gif" alt="" />
+            <ion-card-title>24°C</ion-card-title>
           </ion-card-header>
-          <ion-card-content>
-            <p>La temperatura general de la casa es de {{ tempActual }}</p>
-          </ion-card-content>
         </ion-card>
+
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="6">
-        <ion-card class="welcome-card">
-          <img src="/assets/humedad.jpg" alt="" />
+        <ion-card class="color2">
           <ion-card-header>
-            <ion-card-subtitle>Humedad</ion-card-subtitle>
-            <ion-card-title>General</ion-card-title>
+            <img class="humCont" src="/assets/water.gif" alt="" />
+            <h2>40%</h2>
           </ion-card-header>
-          <ion-card-content>
-            <p>La humedad general de la casa es de {{ humedadActual }}</p>
-          </ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col size="6">
-          <ion-card class="welcome-card">
-            <img src="/assets/Alerta.png" alt="" class="alertImg" />
-            <ion-card-header>
-              <ion-card-subtitle>Alertas</ion-card-subtitle>
-              <ion-card-title>General</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <p>{{ alertasActual }}</p>
-            </ion-card-content>
-          </ion-card>
+        <ion-card class="color3">
+          <ion-card-header>
+            <img class="humCont" src="/assets/smoke.gif" alt="" />
+            <h2>XX</h2>
+          </ion-card-header>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
 
 
 
-</ion-content>
+</ion-content> 
