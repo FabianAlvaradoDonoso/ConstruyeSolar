@@ -11,35 +11,25 @@ export class SidebarMenuPage implements OnInit {
 
     pages = [
         {
-            title: 'Inicio',
-            icon:'home',
-            url: '/menu/inicio'
-        },
-        {
             title: 'Contaminación',
-            icon:'home',
-            url: '/menu/contaminacion'
+            icon:'list',
+            url: '/contaminacion'
         },
         {
             title: 'Gas',
-            icon:'home',
-            url: '/menu/gas'
+            icon:'pie',
+            url: '/gas'
         },
         {
             title: 'Humedad',
-            icon:'home',
-            url: '/menu/humedad'
+            icon:'water',
+            url: '/humedad'
         },
         {
             title: 'Temperatura',
             icon:'home',
-            url: '/menu/temperatura'
+            url: '/temperatura'
         },
-        {
-            title: 'Alertas',
-            icon:'warning',
-            url: '/menu/alerta'
-        }
     ];
 
     selectedPath = '';

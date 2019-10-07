@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { ConexionService } from './conexion.service';
+import { BarraComponent } from './pages/barra/barra.component';
+
 
 import {
   IMqttMessage,
@@ -30,13 +32,16 @@ export function mqttServiceFactory() {
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    BarraComponent
+
+  ],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    ComponentsModule,
     MqttModule.forRoot(MQTT_SERVICE_OPTIONS)
   ],
   providers: [

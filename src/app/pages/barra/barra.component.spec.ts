@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HumedadPage } from './humedad.page';
+import { BarraComponent } from './barra.component';
 
-describe('HumedadPage', () => {
-  let component: HumedadPage;
-  let fixture: ComponentFixture<HumedadPage>;
+describe('BarraComponent', () => {
+  let component: BarraComponent;
+  let fixture: ComponentFixture<BarraComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HumedadPage ],
+      declarations: [ BarraComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HumedadPage);
+    fixture = TestBed.createComponent(BarraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

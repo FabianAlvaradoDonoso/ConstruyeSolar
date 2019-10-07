@@ -9,7 +9,7 @@ import { SidebarMenuPage } from './sidebar-menu.page';
 
 const routes: Routes = [
     {
-        path: 'menu',
+        path: '',
         component: SidebarMenuPage,
         children: [
             {
@@ -28,10 +28,10 @@ const routes: Routes = [
                 path: 'gas',
                 loadChildren: '../gas/gas.module#GasPageModule'
             },
-            {
-                path: 'alerta',
-                loadChildren: '../alerta/alerta.module#AlertaPageModule'
-            },
+            // {
+            //     path: 'alerta',
+            //     loadChildren: '../alerta/alerta.module#AlertaPageModule'
+            // },
             {
                 path: 'inicio',
                 loadChildren: '../inicio/inicio.module#InicioPageModule'
@@ -44,7 +44,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: 'menu/tabs'
+        redirectTo: 'inicio'
     }
 ];
 
