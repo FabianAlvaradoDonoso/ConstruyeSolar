@@ -22,7 +22,8 @@ export class InicioPage implements OnInit {
     }
     tempActual: string = "-Sin Datos-";
     humedadActual: string = "-Sin Datos-";
-    alertasActual: string = "Sin alertas";
+    contaminacionActual: string = "Sin alertas";
+    humoActual: string = "Sin alertas";
     contadorAlertas: any = 0;
     estado: any = "No es posible conectar";
 
@@ -55,6 +56,10 @@ export class InicioPage implements OnInit {
             this.message = JSON.parse(message.payload.toString());
             this.estado = 'Leyendo información desde el servidor';
             console.log(this.message);
+            this.tempActual = this.message[2]['valor'];
+            this.humedadActual = this.message[3]['valor'];
+            this.contaminacionActual = this.message[0]['valor'];
+            this.humoActual = this.message[1]['valor'];
             // let arreglo = this.message.split("#");
             // // this.informacion.contaminacion = arreglo[0];
             // this.humedadActual = parseInt(arreglo[2]);

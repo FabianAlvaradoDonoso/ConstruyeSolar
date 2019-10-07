@@ -15,8 +15,9 @@
       <ion-col>
         <ion-card class="color1">
           <ion-card-header>
+            <h3>Temperatura</h3>
             <img class="temp" src="/assets/fire.gif" alt="" />
-            <ion-card-title>24°C</ion-card-title>
+            <ion-card-title>{{ tempActual }}°C</ion-card-title>
           </ion-card-header>
         </ion-card>
 
@@ -26,16 +27,18 @@
       <ion-col size="6">
         <ion-card class="color2">
           <ion-card-header>
+            <h3>Humedad</h3>
             <img class="humCont" src="/assets/water.gif" alt="" />
-            <h2>40%</h2>
+            <h2>{{ humedadActual }}%</h2>
           </ion-card-header>
         </ion-card>
       </ion-col>
       <ion-col size="6">
         <ion-card class="color3">
           <ion-card-header>
+            <h3>Contaminación / Humo</h3>
             <img class="humCont" src="/assets/smoke.gif" alt="" />
-            <h2>XX</h2>
+            <h2>{{ contaminacionActual}} / {{ humoActual }}</h2>
           </ion-card-header>
         </ion-card>
       </ion-col>
@@ -44,4 +47,4 @@
 
 
 
-</ion-content> 
+</ion-content>
