@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="success tint">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="background">
+  Estado: {{ estado }}
+  <ion-grid>
+    <ion-row>
+     <ion-col>
+       <ion-card class="welcome-card">
+         <img src="/assets/general.png" alt="" />
+         <ion-card-header>
+           <ion-card-subtitle>Temperatura</ion-card-subtitle>
+           <ion-card-title>{{ tempActual }}°C</ion-card-title>
+         </ion-card-header>
+       </ion-card>
+     </ion-col>
+   </ion-row>
+
+    <!-- <ion-row>
+      <ion-col>
+        <ion-card class="welcome-card">
+          <img class="temp" src="/assets/fire.gif" alt="" />
+
+          <ion-card-header>
+            <h3>Temperatura</h3>
+            <ion-card-title>{{ tempActual }}°C</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col size="6" size-sm>
+        <ion-card class="color2">
+          <br>
+          <img class="humCont" src="/assets/water.gif" alt="" />
+          <ion-card-header>
+            <ion-card-subtitle>Humedad</ion-card-subtitle>
+            <h3 class="fuente-datos">{{ humedadActual }}%</h3>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-sm>
+        <ion-card class="color3">
+          <br>
+          <img class="humCont" src="/assets/smoke.gif" alt="" />
+          <ion-card-header>
+            <ion-card-subtitle>Contaminación</ion-card-subtitle>
+            <h3 class="fuente-datos">{{ contaminacionActual}} / {{ humoActual }}</h3>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
